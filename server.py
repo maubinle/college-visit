@@ -4,6 +4,10 @@ from flask import render_template
 app = Flask(__name__)
 
 @app.route('/')
+def hello():
+    return render_template('index.html')
+
+@app.route('/')
 def hello_world():
     return 'Hello World!'
 
@@ -11,9 +15,7 @@ def hello_world():
 def test_page():
 	return "Page 2"
 
-@app.route('/hello/')
-def hello(name=None):
-    return render_template('index.html', name=name)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
