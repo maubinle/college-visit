@@ -1,110 +1,105 @@
 @import "compass/css3";
 
 * {
-	margin: 0;
-	padding: 0;
-	font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-	text-decoration: none;
-	color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    text-decoration: none;
+    color: white;
 }
 
 body{
-	font-size:16px;
-   	background-color: #fff;
+    font-size:16px;
+    background-color: #fff;
     padding-top: 0;
     /*73c7b4*/
 }
 
 html, body {
-	height: 100%;
+    height: 100%;
 }
 
 #wrap {
-	min-height: 100%;
+    min-height: 100%;
 }
 
 #main {
-	overflow:auto;
-	padding-bottom: 50px;
+    overflow:auto;
+    padding-bottom: 50px;
 }  /* must be same height as the footer */
 
 #open-pic {
-	background-image: url(img/visitor.jpg);
-	margin-top: 20px;
-	height: 500px;
-	width: 100%;
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
+    background-image: url(img/visitor.jpg);
+    margin-top: 20px;
+    height: 500px;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 h1 {
-	font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-	color: #000;
-	font-size: 60px;
-	text-align: center;
+    font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    color: #000;
+    font-size: 60px;
+    text-align: center;
 }
 
 h3 {
-	font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-	color: #000;
-	font-size: 20px;
-	text-align: center;
-	font-weight: 300;
+    font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 300;
 }
 
 #start-text {
-	text-align: center;
-	color: #fff;
-	background-color: #808080;
+    text-align: center;
+    color: #fff;
+    background-color: #808080;
 }
 
 #footer {
-	position: relative;
-	margin-top: -50px; /* negative value of footer height */
-	height: 50px;
-	font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-	clear:both;
-	color: #fff;
-	background-color: #808080;
-	text-align: center;
-	padding: 5px;
+    position: relative;
+    margin-top: -50px; /* negative value of footer height */
+    height: 50px;
+    font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    clear:both;
+    color: #fff;
+    background-color: #808080;
+    text-align: center;
+    padding: 5px;
 } 
 
 /*Opera Fix*/
 body:before {
-	content:"";
-	height:100%;
-	float:left;
-	width:0;
-	margin-top:-32767px;/
+    content:"";
+    height:100%;
+    float:left;
+    width:0;
+    margin-top:-32767px;/
 }
 
 .button-container {
-	width: 287px;
-	margin: auto;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	  
-	  /*
-	  Nope =(
-	  margin-left: -25%;
-	  margin-top: -25%;
-	  */
+    width: 287px;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+      
+      /*
+      Nope =(
+      margin-left: -25%;
+      margin-top: -25%;
+      */
 
-	  /* 
-	  Yep!
-	  */
-	transform: translate(-50%, -50%);
-	/*width: 287px; */
+      /* 
+      Yep!
+      */
+    transform: translate(-50%, -50%);
+    /*width: 287px; */
 }
-
-
-
-
-
 
 .btn {
   background: #e2e2e2;
@@ -145,7 +140,7 @@ body:before {
   }
 }
 
-button:-moz-focus-inner {
+button::-moz-focus-inner {
     border: none;
 }
 
@@ -160,117 +155,3 @@ button:-moz-focus-inner {
     text-decoration: none;
     border-radius: 0 10px 10px 0;
 }
-
-/* Mask for background, by default is not display */
-#mask {
-    display: none;
-    background: #000;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-    z-index: 999;
-}
-
-/* You can customize to your needs  */
-.login-popup {
-    display: none;
-    background: #333;
-    padding: 10px;
-    border: 2px solid #ddd;
-    float: left;
-    font-size: 1.2em;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    z-index: 99999;
-    box-shadow: 0px 0px 20px #999;
-    /* CSS3 */
-        -moz-box-shadow: 0px 0px 20px #999;
-    /* Firefox */
-        -webkit-box-shadow: 0px 0px 20px #999;
-    /* Safari, Chrome */
-	border-radius: 3px 3px 3px 3px;
-    -moz-border-radius: 3px;
-    /* Firefox */
-        -webkit-border-radius: 3px;
-    /* Safari, Chrome */;
-}
-
-img.btn_close {
-    Position the close button
-	float: right;
-    margin: -28px -28px 0 0;
-}
-
-fieldset {
-    border: none;
-}
-
-form.signin .textbox label {
-    display: block;
-    padding-bottom: 7px;
-}
-
-form.signin .textbox span {
-    display: block;
-}
-
-form.signin p, form.signin span {
-    color: #999;
-    font-size: 11px;
-    line-height: 18px;
-}
-
-form.signin .textbox input {
-    background: #666666;
-    border-bottom: 1px solid #333;
-    border-left: 1px solid #000;
-    border-right: 1px solid #333;
-    border-top: 1px solid #000;
-    color: #fff;
-    border-radius: 3px 3px 3px 3px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    font: 13px Arial, Helvetica, sans-serif;
-    padding: 6px 6px 4px;
-    width: 200px;
-}
-
-form.signin input:-moz-placeholder {
-    color: #bbb;
-    text-shadow: 0 0 2px #000;
-}
-
-form.signin input::-webkit-input-placeholder {
-    color: #bbb;
-    text-shadow: 0 0 2px #000;
-}
-
-.button {
-    background: -moz-linear-gradient(center top, #f3f3f3, #dddddd);
-    background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(#dddddd));
-    background: -o-linear-gradient(top, #f3f3f3, #dddddd);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f3f3f3', EndColorStr='#dddddd');
-    border-color: #000;
-    border-width: 1px;
-    border-radius: 4px 4px 4px 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    color: #333;
-    cursor: pointer;
-    display: inline-block;
-    padding: 6px 6px 4px;
-    margin-top: 10px;
-    font: 12px;
-    width: 214px;
-}
-
-.button:hover {
-    background: #ddd;
-}
-
-
